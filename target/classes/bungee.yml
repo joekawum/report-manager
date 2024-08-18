@@ -1,0 +1,4 @@
+name: Report-Manager
+version: '1.0-SNAPSHOT'
+main: de.joekawum.report.Manager
+author: joekawumYT

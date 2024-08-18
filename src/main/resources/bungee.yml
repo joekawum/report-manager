@@ -1,0 +1,4 @@
+name: Report-Manager
+version: '${project.version}'
+main: de.joekawum.report.Manager
+author: joekawumYT
