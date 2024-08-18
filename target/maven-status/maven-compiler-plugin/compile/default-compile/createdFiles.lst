@@ -4,6 +4,7 @@ de/joekawum/report/commands/ReportCommand.class
 de/joekawum/report/manager/ReportManager.class
 de/joekawum/report/manager/ReportManager$Reasons.class
 de/joekawum/report/commands/ReportDenyCommand.class
+de/joekawum/report/commands/ReportInfoCommand.class
 de/joekawum/report/commands/ReportListCommand.class
 de/joekawum/report/manager/Report.class
 de/joekawum/report/Manager.class

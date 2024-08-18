@@ -10,10 +10,8 @@ import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
-import net.md_5.bungee.api.chat.hover.content.Content;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
-import org.w3c.dom.Text;
 
 import java.util.UUID;
 
@@ -37,11 +35,10 @@ public class ReportTeleportCommand extends Command {
                         ProxiedPlayer suspect = ProxyServer.getInstance().getPlayer(report.getSuspect());
                         if(suspect == null || !suspect.isConnected()) {
                             player.sendMessage("§cDer gemeldete Spieler ist nicht mehr online!");
-                            //player.sendMessage("§c§oclick §ahere §c§oto delete report");
                             TextComponent textComponent = new TextComponent("here");
                             textComponent.setColor(ChatColor.GREEN);
                             textComponent.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportdeny " + id));
-                            textComponent.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§xdelete").create()));
+                            textComponent.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§cdelete").create()));
 
                             TextComponent comp1 = new TextComponent("click ");
                             comp1.setColor(ChatColor.RED);

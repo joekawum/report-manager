@@ -21,6 +21,7 @@ public final class Manager extends Plugin { // TODO: 14.08.24 add mysql + add to
         getProxy().getPluginManager().registerCommand(this, new ReportTeleportCommand());
         getProxy().getPluginManager().registerCommand(this, new ReportAcceptCommand());
         getProxy().getPluginManager().registerCommand(this, new ReportDenyCommand());
+        getProxy().getPluginManager().registerCommand(this, new ReportInfoCommand());
         getProxy().getPluginManager().registerCommand(this, new NotifyCommand());
 
         getProxy().registerChannel("report:teleport");
